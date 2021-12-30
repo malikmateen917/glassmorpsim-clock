@@ -31,3 +31,8 @@
                 let m = new Date().getMinutes();
                 let s = new Date().getSeconds();
                 var am = 'AM';
+                  // convert 24 hour time to 12 hour format with AM PM incicator
+                  if ( h > 12){
+                    h = h - 12;
+                    var am = 'PM';
+                }
