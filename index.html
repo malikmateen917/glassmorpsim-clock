@@ -36,3 +36,21 @@
                     h = h - 12;
                     var am = 'PM';
                 }
+                // Add 0 to the begining of the number if less than 10
+
+                h = ( h < 10) ? '0' + h : h;
+                m = ( m < 10) ? '0' + m : m;
+                s = ( s < 10) ? '0' + s : s;
+
+
+                hour.innerHTML = h;
+                minute.innerHTML = m;
+                seconds.innerHTML = s;
+                ampm.innerHTML =am;
+
+            }
+
+            var interval = setInterval(clock,1000)
+        </script>
+    </body>
+</html>
