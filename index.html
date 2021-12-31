@@ -31,11 +31,13 @@
                 let m = new Date().getMinutes();
                 let s = new Date().getSeconds();
                 var am = 'AM';
-                  // convert 24 hour time to 12 hour format with AM PM incicator
-                  if ( h > 12){
+
+                // convert 24 hour time to 12 hour format with AM PM incicator
+                if ( h > 12){
                     h = h - 12;
                     var am = 'PM';
                 }
+
                 // Add 0 to the begining of the number if less than 10
 
                 h = ( h < 10) ? '0' + h : h;
